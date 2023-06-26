@@ -1,0 +1,8 @@
+
+Script MML Huawei
+SET GTRXCHAN:IDTYPE=BYID,TRXID=0,CHNO=0,CHTYPE=MBCCH; {BAS BSC6000}
+//Convertimos la BCCH actual que tiene tamien el CBCH a solo BCCH
+
+SET GTRXCHAN:IDTYPE=BYID,TRXID=0,CHNO=1,CHTYPE=SDCCH_CBCH; {BAS BSC6000}
+//Creamos el canal de broadcast en el segundo canal de la trx junto al SDCCH
+
